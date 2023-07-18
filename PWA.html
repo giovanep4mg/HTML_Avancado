@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site aula sobre HTML avançado, falando sobre ONPAGE">
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+    <title>PWA -> Progressive Web App</title>
+</head>
+<body>
+    <main class="toda-pagina">
+        <section class="description">
+            <header class="titulo">
+                <h1>PWA -> Progressive Web App</h1>
+            </header>
+            <h2 class="text">
+                Deixar um site, como se fosse um aplicativo.<br>
+                Exemplos:<br>
+                * Twitch, Facebook, twiter, Uber, entre outros...<br>  
+                <br>
+                Pode ser desenvolvido como um app nativo.<br>
+                Pode ter mudanças visuais, mas tudo deve funcionar perfeito como no app.<br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1>PWA -> Vantagens</h1>
+            </header>
+            <h2 class="text">
+                Poucas alterações na fonte (texto).<br>
+                Pode ser usado offline, como receber mensagens de alerta.<br>
+                Acesso a APIs, como camera, microfone, localização,...<br>
+                Multiplataforma (IOS, Android, Windowns,...)<br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1>PWA -> Desvantagens</h1>
+            </header>
+            <h2 class="text">
+                * Não fica disponivel nas lojas de sistemas operacionais.<br>
+                * Se a aplicação for pesada, vai ficar lento.<br>
+                * Acesso limitado ou inexistente a alguns recursos.<br>
+                * Pode funcionar de forma diferentes em sistemas diferentes.<br>
+                <br>
+                Você pode ver quais recursos, seu programa está usando,<br>
+                fará a verificação de acordo com o dispositivo que estiver acessando o site.<br>
+                <br>
+                Para você verificar recursos disponiveis, acesse esse site:<br>
+                <a href="http://www.whatwebcando.today">link do site aqui</a><br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1>APP SHELL</h1>
+            </header>
+            <h2 class="text">
+                <b>É o minimo de HTML, CSS e JavaScript</b> que alimenta a interface de usuário.<br>
+                <br>
+                * É como se fosse um inicio do site, uma amostra do site que virá.<br>
+                * Carregamento rápido.<br>
+                * Ter armazenamento em cache.<br>
+                * Ter exibição dinâmica do conteúdo.<br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1> PWA -> Instalando</h1>
+            </header>
+            <h2 class="text">
+                * No VScode, no pront de comando, abra ele coloque esse comando:<br>
+                <b>npm install serviceworker </b><br>
+                <br>
+                * Para incluir no projeto que esteja criando, coloque :<br>
+                "script"<br>
+                _______<b>if(`serviceWorker`) { </b>
+                _______________<b>navigator.serviceWorker.register(`generate-sw.js`);</b> <br>
+                ___<b>}</b> <br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1> PWA -> gerar arquivo Manifest.json</h1>
+            </header>
+            <h2 class="text">
+                * Exemplos de dois geradores, de manifest:<br>
+                <br>
+                <b>https://app-manifest.firebaseapp.com/</b> <br>
+                <a href="https://app-manifest.firebaseapp.com/">app-manifest</a><br>
+                <br>
+                <b>https://www.simicart.com/manifest-generator.html/</b> <br>
+                <a href="https://www.simicart.com/manifest-generator.html/">simicart</a>
+                <br>
+                * Quando criar o iconi, o idela seria entre 512 px por 512px.<br>    
+                <br>        
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1> PWA -> Cache</h1>
+            </header>
+            <h2 class="text">
+                O Service Worker, possui as seguintes atapas:<br>
+                <br>
+                <b> Install </b><br>
+                * Ativado somente uma vez, se alterar é ativado novamente.<br>
+                <br>        
+                <b>Activate</b><br>
+                * Chamado só uma vez, quando uma nova versão do sw.js é instalada,<br>
+                e se não tiver outra versão sendo executada. Deleta as antigas. <br>
+                <br>
+                <b>Fetch</b><br>
+                * Usado toda vez, que a página é requisitada.<br>
+                <br>
+                <b>Message</b> <br>
+                <br>
+                <b>Sync</b> <br>
+                <br>
+                <b>Push</b><br>
+                <br>
+            </h2>
+        </section>
+         <!--Link próxima página -->
+         <section class="description">
+            <br>
+            <a href="./BoasPraticasAcessiblilidade.html">Página anterior</a> <br>
+            <br>
+            <a href="./">Próxima página</a>
+            <br>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1> Como fazer o PWA</h1>
+            </header>
+            <h2 class="text">
+                * Abra o VScode, escolha uma pasta, abra o terminal do VScode e digite:<br>
+                <b>npm init</b> escolha algumas das opções,adicione alguns detalhes.<br>
+                <br>
+                <b>npm install</b> <br>
+                <br>
+                <b>npm express</b> <br>
+                <br>
+                <b>npm install i js</b> <br>
+                <br>
+                * Crie uma pasta com o nome " public " dentro da pasta do seu projeto que acabamos de criar,<br>
+                * Dentro da pasta " public ", crie outras 3 pastas com os nomes:<br>
+                <b>css, img, js</b> <br>
+                <br>
+                * Pega os arquivos do manifest, que você precisa ter criado antes.<br>
+                * troque o arquivo ".manifest" por <b>.json</b> <br>
+                <br>
+                * Copie os builds e index para a pasta " public ".<br>
+                <br>
+                * Inclua o Service Worker:<br>
+                "script"<br>
+                _______<b>if(`serviceWorker`) { </b> <br>
+                _______________<b>navigator.serviceWorker.register(`generate-sw.js`);</b> <br>
+                ___<b>}</b> <br>
+                "script" <br>
+                <br>
+            </h2>
+        </section>
+         <!--Link próxima página -->
+         <section class="description">
+            <br>
+            <a href="./BoasPraticasAcessiblilidade.html">Página anterior</a> <br>
+            <br>
+            <a href="./index.html">Inicio</a>
+            <br>
+        </section>
+        <br>
+    </main>
+</body>
+</html>

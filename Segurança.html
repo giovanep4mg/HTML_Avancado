@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site aula sobre HTML avançado, falando sobre ONPAGE">
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+    <title>Segurança</title>
+</head>
+<body>
+    <main class="toda-pagina">
+        <section class="description">
+            <header class="titulo">
+                <h1>Segurança tópicos</h1>
+            </header>
+            <h2 class="text">
+                <b>SSL/TLC</b> <br>
+                <b>CORS</b> <br>
+                <b>CSP</b> <br>
+                <b>OAWASP top 10</b> <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1>SSL (Secure Sockets Layers)</h1>
+            </header>
+            <h2 class="text">
+                * Alguns consideram o SSL depreciado e surgerem o uso do TLS.<br>
+                * É um protocolo criptografado que permite ter mais segurança de comunicação,<br>
+                ao acessar um ambiente virtual, como páginas webs ou emails.<br>
+                <br>
+                Geralmente o usuário escolhe entre HTTPS ou HTTP, o melhor é o HTTPS.<br>
+                <br>
+                Normalmente a instalação é feita através do servidor Controlado, pago ou não.<br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1>CORS</h1>
+            </header>
+            <h2 class="text">
+                * Compartilhamento de recursos de origens cruzadas, origens diferentes.<br>
+                * Executa uma requisição <b>Cross-origin HTTP</b> ao solicitar um recurso de origem diferente,<br>
+                podendo ser dominio, protocolo ou porta diferente da origem.<br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1>CORS Possíveis erros </h1>
+            </header>
+            <h2 class="text">
+                * Erros mais comuns são as requisições JavaScript, que utilizam:<br>
+                XMLhttpRequest, Fetch, APIs.<br>
+                <br>
+                <b>XMLHttpRequest</b> <br>
+                * São objetos para interagir entre os servidores, indo desde de obtenção,<br>
+                Recuperação de dados entre url, até atualização.<br>
+                <br>
+                <b>Fetch APIs</b> <br>
+                * São interfaces para buscar recursos, usado para acessar e manipula HTML,<br>
+                com request e responses objects.<br>
+                * Pode acontecer erros, que não aparece na tela, pode aparecer no console.<br>
+                <br>
+                <b>Erros de CSS Shapes</b> <br>
+                * Textos e imagens se atrapalham, causando erros na tela.<br>
+                <br>
+                <b>Erros carregamento de imagens</b> <br>
+                *Não consegue acessar por que está vindo de outra origem.<br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1>CORS Algumas soluções </h1>
+            </header>
+            <h2 class="text">
+                * Geralmente são causados por ausência do "header" <br>
+                <br>
+                Defina o header o acesso de tal coisa que foi bloqueado:<br>
+                <br>
+                <b>Header set Acess-Coontrol-Allow-Origin:https://google.com.br</b> <br>
+                <br>
+                <b>Header set Acess-Control-Allow-Methods: POST, GET</b> <br>
+                <br>
+                * O jeito certo de ser usado, está no documento da ferramenta.<br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1>CSP (Content Security Policy) </h1>
+            </header>
+            <h2 class="text">
+                É uma camada adicional de segurança, visando detectar e amenizar algum ataque :<br>
+                como uma injeção de dados e Cross Site Scripting/XSS .<br>
+                <br>
+                O ataque normalemente, é feito pelo formulário, <br>
+                eles inserem o JavaScript para ter algum beneficio.<br>
+                <br>
+                Para habilitar, usamos a seguinte linha de código:<br>
+                <br>
+                <b>"meta http-equiv="Content-Security-Policy"</b> ,<br>
+                <b> content="default-src `self`; img src https://src `none`; " </b> <br>
+                <br>
+                Guia completo de como usar e mais informações;<br>
+                <br>
+                <a href="http://content-security-policy.com">Content Security Policy</a><br>
+                <br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1>Ferramentas para analisar sites, a segurança do site</h1>
+            </header>
+            <h2 class="text">
+                * o site precisa está em algum servidor, estar online, para ser testado.<br>
+                <br>
+               * Se der erro,  faça uma avaliação se este erro realmente atrapalha seu projeto.<br>
+               <br>
+               O endereço do site é : <br>
+               <b>observatory.mozilla.org</b> <br> 
+               <br>
+               Esse é o link:<br>
+               <a href="https://observatory.mozilla.org/">Mozzila Observatory</a> <br>
+                <br>
+            </h2>
+        </section>
+        <section class="description">
+            <header class="titulo">
+                <h1> OWASP top 10</h1>
+            </header>
+            <h2 class="text">
+                * Open Web Application Security Project.<br>
+                <br>
+                É um documento de conscientização para segurança de sites e aplicações web.<br>
+                <br>
+                * Vários especialistas apontaram as principais falhas de segurança.<br>
+                <br>
+                <a href="https://owasp.org/Top10/pt_BR/">link para acessar o documento</a> <br>
+                <br>
+                Esse documento fala sobre vários erros, dá exemplos e como previnir.<br>
+                <br>
+            </h2>
+        </section>
+         <!--Link próxima página -->
+         <section class="description">
+            <br>
+            <a href="./BoasPraticasAcessiblilidade.html">Página anterior</a> <br>
+            <br>
+            <a href="./PWA.html">Próxima página</a>
+            <br>
+        </section>
+        <br>
+    </main>
+</body>
+</html>
